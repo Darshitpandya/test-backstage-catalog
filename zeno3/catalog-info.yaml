@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: zeno-travel-bookings-widget
+  description: Allows for querying and displaying bookings on the dashboard
+  annotations:
+    pagerduty.com/service-id: PLA4OOU
+    pagerduty.com/service-name: Trip Experience
+    serko.com/contributors: team-b4b-booking,team-flight&rail-forshan,team-flight&rail-xi'an,team-hotel&car-forshan,team-hotel&car-xi'an
+    serko.com/stream: enterprise
+  links:
+    - url: https://serko.slack.com/archives/C03T1F5UNE6
+      title: slack channel
+    - url: https://serko.atlassian.net/wiki/spaces/KYL/overview
+      title: confluence space
+  tags:
+    - nodejs
+spec:
+  lifecycle: production
+  owner: team-trip-experience
+  system: zeno
+  type: website
